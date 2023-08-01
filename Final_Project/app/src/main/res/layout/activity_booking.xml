@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#CEF1CD">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card1"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="18dp"
+        android:layout_width="match_parent"
+        android:layout_height="600dp"
+        android:layout_row="1"
+        android:layout_rowWeight="1"
+        android:layout_column="0"
+        android:layout_columnWeight="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="#ffffff">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Name"
+                        android:textColor="#0C2001"
+                        android:textSize="18dp" />
+
+                    <EditText
+
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:inputType="text"
+                        android:textSize="17sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Date"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+
+
+                    <TextView
+                        android:id="@+id/date"
+                        style="?android:spinnerStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:queryBackground="@color/white" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_weight="1"
+                            android:text="Time(From):"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/fromtime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+
+
+
+                    <TimePicker
+                        android:id="@+id/av2"
+                        style="?android:spinnerStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:queryBackground="@color/white"
+                        android:layout_margin="5dp"
+                        android:timePickerMode="spinner"
+                        android:inputType="number"
+                        android:textSize="17sp"/>
+
+
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="12dp"
+                            android:layout_marginRight="12dp"
+                            android:layout_marginBottom="5dp"
+                            android:text="Time(to):"
+                            android:layout_weight="1"
+                            android:textColor="@color/black"
+                            android:textSize="18dp" />
+
+                        <TextView
+                            android:id="@+id/totime"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="12dp"
+                            android:layout_weight="1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="185dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Vehicle Type"
+                        android:textColor="@color/black"
+                        android:textSize="18dp" />
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/rgroup">
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2-wheeler"
+                            android:id="@+id/r1">
+                        </RadioButton>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="3-wheeler"
+                            android:id="@+id/r2"
+                            ></RadioButton>
+                        <RadioButton
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="4-wheeler"
+                            android:id="@+id/r3"
+                            ></RadioButton>
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_margin="30dp">
+
+                    <Button
+                        android:id="@+id/b2"
+                        android:layout_width="100dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="30dp"
+                        android:layout_marginRight="30dp"
+                        android:backgroundTint="#9A830E"
+                        android:layout_weight="1"
+                        android:text="BOOK" />
+
+                    <Button
+                        android:id="@+id/b3"
+                        android:layout_width="98dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:backgroundTint="#9A830E"
+                        android:layout_weight="1"
+                        android:text="VIEW" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

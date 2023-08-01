@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/admHome"
+            android:icon="@drawable/home"
+            android:title="Home"
+            />
+
+        <item
+            android:id="@+id/admLogin"
+            android:icon="@drawable/login"
+            android:title="Login"
+            />
+
+        <item
+            android:id="@+id/admProfile"
+            android:icon="@drawable/profile"
+            android:title="Profile"
+            />
+
+        <item
+            android:id="@+id/admLogout"
+            android:icon="@drawable/logout"
+            android:title="Logout"
+            />
+
+    </group>
+
+    <item android:title="Activities" >
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/register"
+                    android:icon="@drawable/reg"
+                    android:title="Register The Station"
+                    />
+
+                <item
+                    android:id="@+id/view"
+                    android:icon="@drawable/view"
+                    android:title="View Stations"
+                    />
+
+                <item
+                    android:id="@+id/admRegister"
+                    android:icon="@drawable/baseline_person_add_alt_1_24"
+                    android:title="Register New User"
+                    />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Communication" >
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/Contact1"
+                    android:icon="@drawable/contact"
+                    android:title="Contact Us"
+                    />
+
+                <item
+                    android:id="@+id/share1"
+                    android:icon="@drawable/share"
+                    android:title="Share"
+                    />
+
+                <item
+                    android:id="@+id/rateus1"
+                    android:icon="@drawable/rateus"
+                    android:title="Rate Us"
+                    />
+            </group>
+        </menu>
+    </item>
+
+</menu>

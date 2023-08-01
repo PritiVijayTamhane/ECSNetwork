@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6FAD9"
+    android:fitsSystemWindows="true"
+    tools:context=".Dashboard">
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="left"
+        app:headerLayout="@layout/header"
+        app:menu="@menu/menu" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/toolbar" />
+
+
+            <ImageView
+                android:id="@+id/imageview2"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_below="@+id/toolbar"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginRight="110dp"
+                android:layout_marginTop="80dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/evlogo" />
+
+            <GridLayout
+                android:id="@+id/grid_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/imageview2"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="50dp"
+                android:columnCount="2"
+                android:paddingTop="10dp"
+                android:rowCount="4">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card1"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_row="0"
+                    android:layout_rowWeight="1"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="100dp"
+                    android:backgroundTint="#ffffff"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/linear1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="20dp">
+
+                        <ImageView
+                            android:id="@+id/imageview3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/map" />
+
+                        <TextView
+                            android:id="@+id/textview1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            android:text="FIND STATION NEARBY"
+                            android:textAlignment="center"
+                            android:textColor="#02148C"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/card2"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:layout_row="1"
+                    android:layout_rowWeight="1"
+                    android:layout_column="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="20dp"
+                    android:backgroundTint="#ffffff"
+                    app:cardCornerRadius="15dp"
+                    app:cardElevation="12dp">
+
+                    <LinearLayout
+                        android:id="@+id/linear2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="20dp">
+
+                        <ImageView
+                            android:id="@+id/imageview4"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/booking" />
+
+                        <TextView
+                            android:id="@+id/textView2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="20dp"
+                            android:paddingLeft="5dp"
+                            android:paddingRight="5dp"
+                            android:text="BOOK THE SESSION"
+                            android:textAlignment="center"
+                            android:textColor="#02148C"
+                            android:textSize="17sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </GridLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.drawerlayout.widget.DrawerLayout>
